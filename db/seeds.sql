@@ -1,8 +1,8 @@
-INSERT INTO department (id, name)
+INSERT INTO department (department_name)
 VALUES ("quality-assurance"),
 ("accounting"),
 ("marketing"),
-("sales")
+("sales");
 
 SELECT * FROM department;
 
@@ -18,7 +18,7 @@ VALUES ("qa manager", 100000, 1),
 ("sales-manager", 80000, 4),
 ("sales-rep", 50000, 4);
 
-SELECT FROM * role;
+SELECT * FROM role;
 
 INSERT INTO employee (first_name, last_name, role_id, manager_id)
 VALUES ("Thomas", "Brown", 1, NULL),
@@ -32,4 +32,4 @@ VALUES ("Thomas", "Brown", 1, NULL),
 ("Ethan", "Black", 4, NULL),
 ("Lucy", "Grey", 4, 4);
 
-SELECT FROM * employee;
+SELECT * FROM employee;
