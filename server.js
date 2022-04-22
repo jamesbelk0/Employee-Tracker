@@ -101,39 +101,39 @@ const viewAllEmployees = () => {
     });
 };
 // View all Roles
-// const viewAllRoles = () => {
-//     console.log(`=====================================================`);
-//     console.log(`Current Employee Roles:`);
-//     console.log(`=====================================================`);
-//     const sql = `
-// SELECT role.id,
-// role.title,
-// deparment.department_name AS department
-// FROM role
-// INNER JOIN department ON role.department_id = department.id`;
-//     connection().query(sql, (err, response) => {
-//         if (err) throw err;
-//         response.forEach((role) => { console.log(role.title); });
-//         console.log(`=====================================================`);
-//         promptUser();
-//     });
-// };
+const viewAllRoles = () => {
+    console.log(`=====================================================`);
+    console.log(`Current Employee Roles:`);
+    console.log(`=====================================================`);
+    const sql = `
+SELECT role.id,
+role.title,
+deparment.department_name AS department
+FROM role
+INNER JOIN department ON role.department_id = department.id`;
+    connection.query(sql, (err, response) => {
+        if (err) throw err;
+        response.forEach((role) => { console.log(role.title); });
+        console.log(`=====================================================`);
+        promptUser();
+    });
+};
 // // View all Departments
-// const viewAllDepartments = () => {
-//     const sql = `
-//     SELECT department.id AS id,
-//     department.department_name AS department
-//     FROM department`;
-//     connection.promise().query(sql, (err, response) => {
-//         if (err) throw err;
-//         console.log(`=====================================================`);
-//         console.log(`All Departments:`);
-//         console.log(`=====================================================`);
-//         console.table(response);
-//         console.log(`=====================================================`);
-//         promptUser();
-//     });
-// };
+const viewAllDepartments = () => {
+    const sql = `
+    SELECT department.id AS id,
+    department.department_name AS department
+    FROM department`;
+    connection.query(sql, (err, response) => {
+        if (err) throw err;
+        console.log(`=====================================================`);
+        console.log(`All Departments:`);
+        console.log(`=====================================================`);
+        console.table(response);
+        console.log(`=====================================================`);
+        promptUser();
+    });
+};
 // // View all Employees by Department
 // const viewEmployeesByDepartments = () => {
 //     const sql = `
