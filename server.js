@@ -197,7 +197,7 @@ const addEmployee = () => {
             const roleSql = `SELECT role.id, role.title FROM role`;
             connection.query(roleSql, (error, data) => {
                 if (error) throw error;
-                const roles = data.map(({ id, title }) => ({ name: title, valie: id }));
+                const roles = data.map(({ id, title }) => ({ name: title, value: id }));
                 inquirer.prompt([
                     {
                         type: 'list',
