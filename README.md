@@ -1,6 +1,4 @@
-# SQL Challange: Employee-Tracker
-
-### Challenge 12
+# SQL: Employee-Tracker
 
 ## User Story
 - AS A business owner
@@ -42,8 +40,6 @@
 
 ## Contributor
 - James Belk
-- Luis (Tutor) helped with some code structure.
-- Matt (ask-144384) for helping solve an issue with my "addEmployee" function
 
 ## Questions
 If there are any issues or questions, please contact at:
